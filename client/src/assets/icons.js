@@ -15,6 +15,4 @@ const Icons = {
     Search: "https://img.icons8.com/?size=100&id=59878&format=png&color=000000",
 }
 
-// <img src={Icons.Down} alt="Down Arrow" style={{ filter: "invert(25%) sepia(100%) saturate(300%) hue-rotate(-50deg)" }} />
-
 export default Icons;

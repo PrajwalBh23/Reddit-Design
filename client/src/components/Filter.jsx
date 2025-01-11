@@ -7,7 +7,6 @@ const Filter = () => {
   const [communities, setCommunities] = useState([]);
 
   useEffect(() => {
-    // Fetch popular subreddits
     fetch('https://www.reddit.com/r/all/.json?limit=4')
       .then(response => response.json())
       .then(data => {
@@ -117,7 +116,6 @@ const Filter = () => {
               <img src={community.icon} alt="icon" className="content-icon" />
               <p className="community-name">{`r/${community.name}`}</p>
             </div>
-            {/* <p className="subscribers">{community.subscribers}</p> */}
           </div>
         ))}
       </div>

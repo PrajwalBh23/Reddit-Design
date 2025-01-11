@@ -9,7 +9,7 @@ export default function Home() {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearchQueryChange = (query) => {
-      setSearchQuery(query);  // Update the search query in state
+      setSearchQuery(query);  
     };
    
 

@@ -13,8 +13,9 @@
 }
 .links {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to new lines */
-    justify-content: space-between; /* Distribute items across the available space */
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 6px 0;
 }
 
 .links ul {
@@ -24,7 +25,10 @@
 }
 
 .links ul li {
-    margin-bottom: 10px; /* Space between items in the same column */
+    margin-bottom: 10px; 
+}
+.footer{
+ margin: 5px 0;   
 }
 .footer, .terms{
     display: flex;
@@ -32,8 +36,8 @@
     justify-content: space-between;
 }
 hr{
-    background-color: beige;
-    height: 2px;
+    background-color: rgb(228, 228, 228);
+    height: 1px;
     width: 100%;
 }
 

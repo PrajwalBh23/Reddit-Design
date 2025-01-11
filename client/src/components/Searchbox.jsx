@@ -8,7 +8,6 @@ const Searchbox = ({ query }) => {
 
   useEffect(() => {
     if (query.trim()) {
-      // Fetch data from Reddit API based on the search query
       axios
         .get(`https://www.reddit.com/search.json?q=${query}`)
         .then((response) => {
@@ -16,7 +15,7 @@ const Searchbox = ({ query }) => {
             title: post.data.title,
             url: post.data.url,
             author: post.data.author,
-            avatar: post.data.thumbnail || 'default-avatar.png', // Default avatar if none exists
+            avatar: post.data.thumbnail,
             date: new Date(post.data.created_utc * 1000).toLocaleString(),
             comments: post.data.num_comments,
             shares: post.data.num_crossposts,
@@ -28,7 +27,7 @@ const Searchbox = ({ query }) => {
           console.error('Error fetching Reddit posts:', error);
         });
     }
-  }, [query]); // Re-run this effect when the query changes
+  }, [query]); 
 
   return (
     <div className="result">

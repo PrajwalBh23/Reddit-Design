@@ -5,10 +5,9 @@ import axios from 'axios';
 
 const Resultbox = () => {
   const [posts, setPosts] = useState([]);
-  const [selectedTopic, setSelectedTopic] = useState('top'); // Default topic is 'hot'
+  const [selectedTopic, setSelectedTopic] = useState('top'); 
   
   useEffect(() => {
-    // Fetch data from Reddit API based on the selected topic
     axios.get(`https://www.reddit.com/r/popular/${selectedTopic}.json?limit=5`)
       .then(response => {
         const postData = response.data.data.children.map(post => ({

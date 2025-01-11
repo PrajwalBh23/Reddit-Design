@@ -11,13 +11,13 @@ export default function Header({ onSearchQueryChange }) {
   const handleSearchChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
-    onSearchQueryChange(query);  // Propagate the query to the parent
+    onSearchQueryChange(query);  
   };
 
   // Handle the Enter key press event
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      onSearchQueryChange(searchQuery);  // Trigger search when Enter is pressed
+      onSearchQueryChange(searchQuery);  
     }
   };
 
@@ -40,8 +40,7 @@ export default function Header({ onSearchQueryChange }) {
           <img src={Icons.All} alt="Sun" style={{ marginRight: '5px' }} className="sun-icon" />
           <p>All</p>
         </div>
-        {/* <input type="text" className="header-search" placeholder="Find community and posts" aria-label="Search" style={{ paddingLeft: '40px' }} /> */}
-        
+       
         <input
           type="text"
           className="header-search"
