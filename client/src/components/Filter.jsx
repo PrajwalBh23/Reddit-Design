@@ -55,7 +55,6 @@ const Filter = () => {
               <img src={contenticon} alt="icon" className="content-icon" />
               <p className="community-name">r/funnymore</p>
             </div>
-            <p className="subscribers">123</p>
           </div>
           <div className="content">
             <div className="detail">
@@ -85,7 +84,6 @@ const Filter = () => {
               <img src={contenticon} alt="icon" className="content-icon" />
               <p className="community-name">r/funnymore</p>
             </div>
-            <p className="subscribers">123</p>
           </div>
           <div className="content">
             <div className="detail">
@@ -99,7 +97,6 @@ const Filter = () => {
               <img src={contenticon} alt="icon" className="content-icon" />
               <p className="community-name">r/funnymore</p>
             </div>
-            <p className="subscribers">123</p>
           </div>
         </div>
       </div>
