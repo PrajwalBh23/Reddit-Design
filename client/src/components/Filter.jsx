@@ -33,7 +33,7 @@ const Filter = () => {
       <div className="filter-category">
         <div className="heading">
           <p>FAVOURITES</p>
-          <p>ALL</p>
+          <p style={{color:'gray', fontSize:'small'}}>ALL</p>
         </div>
         <div className="content-box">
           <div className="content">
@@ -70,7 +70,7 @@ const Filter = () => {
       <div className="filter-category">
         <div className="heading">
           <p>REDDIT FEED</p>
-          <p>ALL</p>
+          <p style={{color:'gray', fontSize:'small'}}>ALL</p>
         </div>
         <div className="content-box">
           <div className="content">
@@ -107,7 +107,7 @@ const Filter = () => {
       <div className="filter-category">
       <div className="heading">
         <p>COMMUNITY</p>
-        <p>ALL</p>
+        <p style={{color:'gray', fontSize:'small'}}>ALL</p>
       </div>
       <div className="content-box">
         {communities.map((community, index) => (
