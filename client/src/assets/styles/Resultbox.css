@@ -1,0 +1,201 @@
+.result{
+    background-color: white;
+    margin: 15px;
+    height: 97%;
+    border-radius: 8px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.topic-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.topic-name{
+  font-size: larger;
+  font-weight: bold;
+}
+.toppic-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.toppic-list p{
+    margin: 0 15px;
+}
+
+.cards-container {
+    height: 90%; /* Set a height for the container */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: none; /* For Firefox: hide scrollbar */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge: hide scrollbar */
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and newer Edge: hide scrollbar */
+}
+
+.post-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+    width: 96%;
+    /* max-width: 945px; */
+    margin: 10px 20px;
+  }
+  
+  .post-card-left {
+    flex: 0 0 80px;
+  }
+  
+  .post-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .post-card-center {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .post-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 8px;
+    line-height: 1.4;
+  }
+  
+  .post-meta {
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  
+  .user-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .poster-name {
+    font-weight: bold;
+  }
+  
+  .post-date {
+    margin-left: auto; 
+    color: #999;
+  }
+  
+  .post-card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .post-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .stat {
+    margin-bottom: 4px;
+  }
+  
+  .votes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    margin-bottom: 12px;
+  }
+  
+  .vote-up,
+  .vote-down {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .vote-count {
+    font-weight: bold;
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  .post-card-right{
+    display: flex;
+    flex-direction: row;
+  }
+.post-stats{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0 16px;
+}
+.stat{
+    display: flex;
+}
+  .stat img{
+    height: 20px;
+    margin: 0 5px;
+  }
+  
+  
+  .post-card-right {
+    display: flex;
+    align-items: stretch; /* Ensure both sections are the same height */
+  }
+  
+  .post-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between stats */
+    flex: 1; /* Allow it to take available space */
+  }
+  
+  .divider {
+    width: 1px; /* Thinner divider for better visibility */
+    background-color: rgb(228, 228, 228); /* Red color as specified */
+    position: absolute;
+    top: -16px; /* Touch the top */
+    bottom: -16px; /* Touch the bottom */
+    left: 70%; /* Adjust as per layout, e.g., center or specific alignment */
+}
+
+  .votes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px; /* Space between items */
+    padding-left: 16px; /* Space from the vertical line */
+  }
+
+  .votes img{
+    background-color: rgb(229, 202, 183);
+    border-radius: 8px; 
+    padding: 3px;
+    width: 25px; 
+    height: 25px; 
+    object-fit: cover; 
+  }
+  

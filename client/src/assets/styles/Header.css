@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+html,
+body {
+    height: 80vh;
+}
+
+.header {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 1%;
+    width: 98%;
+}
+
+.header-left {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid rgb(54, 1, 199); */
+}
+
+.sun-icon {
+    margin: 0 2%;
+    width: 15px;
+    height: 15px;
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+}
+
+.header-middle {
+    margin: 0 3% 0 5%;
+    width: 62%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid rgb(54, 1, 199); */
+}
+
+.icon-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-label img {
+    height: 20px;
+    width: auto;
+}
+
+.header-search {
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    background-image: url('https://img.icons8.com/?size=100&id=59878&format=png&color=000000');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 18px;
+    border: 1px solid #ccc;
+    padding-right: 15px;
+}
+
+.header-search::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+
+.header-middle button {
+    background-color: #ff4500;
+    border: none;
+    padding: 7px;
+    min-width: 10%;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+}
+
+.header-right {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-right img {
+    height: 20px;
+    width: auto;
+    margin: 0 25px;
+}
+
+.avator-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.avator-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+}
+
+.avatar {
+    border-radius: 50%;
+    box-shadow: rgba(0, 51, 109, 0.5) 0px 0px 0px 3px;
+}
+
+.avator-icon .down-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.combine {
+    display: flex;
+    background-color: hsl(206.67deg 52.94% 96.67%);
+    /* coorect one */
+    /* background-color: hsl(207, 12%, 71%); */
+    border-radius: 8px;
+    height: calc(100vh - 60px);
+    margin: 5px;
+}
+
+.Filter {
+    flex: 0 0 15%;
+}
+
+.Resultbox {
+    flex: 0 0 67%;
+}
+
+.Advertisement {
+    flex: 0 0 18%;
+}
